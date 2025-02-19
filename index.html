@@ -13,6 +13,9 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             padding: 20px;
@@ -23,13 +26,15 @@
             display: block;
             margin: 0 auto 10px auto;
         }
-        main img {
-            display: none; /* Hide the large image in main */
+        main {
+            flex-grow: 1;
         }
         footer {
-            margin-top: 20px;
             padding: 10px;
             background: rgba(0, 0, 0, 0.2);
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -39,6 +44,7 @@
         <h1>Trust BI</h1>
         <p>Solving business problems with data</p>
     </header>
+    <main></main>
     <footer>
         <p>&copy; 2025 Trust BI. All rights reserved.</p>
     </footer>
